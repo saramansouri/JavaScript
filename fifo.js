@@ -1,5 +1,5 @@
 var testingArray = [1, 2, 3, 4, 5, 7, 10, 12, "sara"]
-// var testingArray = [1, 2, 3, 4, 5, "ss"]
+
 
 // this is a push function
 function push(anArray, input) {
@@ -8,18 +8,43 @@ function push(anArray, input) {
         anArray[i] = anArray[i - 1]
     }
     anArray[0] = input
-    console.log("push -> " + anArray)
+    return anArray
+    // console.log("push -> " + anArray)
 }
 push(testingArray, "sara")
-// push(testingArray, "gazar")
 
 
 
 // this is a pull function
 function pull(anArray) {
     var deletedItem = anArray[anArray.length - 1]
+    console.log("deleted item -> [" + deletedItem + "]")
+
     anArray.length = anArray.length - 1
-    console.log("pull -> " + anArray, " / deleted item -> [" + deletedItem + "]")
+    return anArray
+    // console.log("pull -> " + anArray)
+
 }
 
 pull(testingArray)
+
+
+
+
+// ----------------this is a push function - using new array
+// function push(anArray, input) {
+//     var newArray = []
+//     newArray[0] = input
+//     for (i = 0; i < anArray.length; i++) {
+//         newArray[i + 1] = anArray[i]
+
+//     }
+//     return newArray
+// }
+// push(testingArray, "sara")
+// push(testingArray, "gazar")
+
+// var testingArray = [1, 2, 3, 4, 5, "ss"]
+
+
+
