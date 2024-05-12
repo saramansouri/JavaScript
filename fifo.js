@@ -1,4 +1,4 @@
-var testingArray = [1, 2, 3, 4, 5, 7, 10, 12, "sara"]
+var testingArray = [1, 2, "sara"]
 
 
 // this is a push function
@@ -8,8 +8,8 @@ function push(anArray, input) {
         anArray[i] = anArray[i - 1]
     }
     anArray[0] = input
-    return anArray
-    // console.log("push -> " + anArray)
+    // return anArray
+    console.log("push -> " + anArray)
 }
 push(testingArray, "sara")
 
@@ -17,14 +17,19 @@ push(testingArray, "sara")
 
 // this is a pull function
 function pull(anArray) {
-    var deletedItem = anArray[anArray.length - 1]
-    console.log("deleted item -> [" + deletedItem + "]")
+    if (anArray.length !== 0) {
+        var deletedItem = anArray[anArray.length - 1]
+        console.log("deleted item -> [" + deletedItem + "]")
 
-    anArray.length = anArray.length - 1
-    return anArray
-    // console.log("pull -> " + anArray)
+        anArray.length = anArray.length - 1
+        // return anArray
+        console.log("pull -> " + anArray)
 
+    } else {
+        console.log("This Array is EMPTY!")
+    }
 }
+
 
 pull(testingArray)
 
