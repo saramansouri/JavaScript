@@ -1,0 +1,66 @@
+body {
+  text-align: center;
+  outline: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+#countdown {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+}
+
+.buttons {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+#start,
+#stop,
+#reset {
+  margin: 10px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  outline: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: larger;
+}
+
+#start {
+  background: rgb(19, 197, 19);
+}
+
+#start:hover {
+  background: rgba(0, 128, 0, 0.642);
+}
+
+#start:disabled {
+  background: grey;
+  cursor: not-allowed;
+}
+
+#stop {
+  background: red;
+}
+
+#stop:hover {
+  background: rgba(255, 0, 0, 0.525);
+}
+
+#stop:disabled {
+  background: grey;
+  cursor: not-allowed;
+}
+
+#reset {
+  background: rgb(0, 128, 255);
+}
+
+#reset:hover {
+  background: rgba(0, 128, 255, 0.595);
+}
+
