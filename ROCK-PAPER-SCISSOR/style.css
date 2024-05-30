@@ -1,0 +1,63 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.title {
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+}
+
+#winner {
+  font-size: medium;
+  font-style: bold;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+  margin-top: 20px;
+}
+
+.btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+button {
+  padding: 5px;
+  background-color: rgb(255, 127, 227);
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(193, 156, 156);
+}
+
+.counterMsg {
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  color: rgb(255, 0, 0);
+  font-weight: bold;
+}
+
+#winner {
+  color: green;
+  font-weight: bold;
+}
+
+.restart {
+  background-color: black;
+  color: white;
+}
