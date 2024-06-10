@@ -10,11 +10,11 @@ let listOfCards =
         },
         {
             question: "Question",
-            answer: "This is the answer",
+            answer: "Answer",
         },
         {
             question: "Question",
-            answer: "This is the answer",
+            answer: "Answer",
         }
     ]
 
@@ -30,8 +30,8 @@ function creatCard(cards) {
     creatNewElem.classList.add("card")
     creatNewElem.innerHTML =
         `<div class="card-body">
-                    <h5 class="questionTag">${cards.question}</h5>
-                    <p id="answerTag" style="display:none;">${cards.answer}</p>
+                    <h5 class="quest">${cards.question}</h5>
+                    <p id="answ">${cards.answer}</p>
                     <button class="showbtn" onclick="showAnswer()">Show</button>
                     <button class="deletebtn" onclick="deleteCard()">Delete</button>
         </div>
@@ -61,9 +61,11 @@ function addObjectToArray() {
 
 
 function showAnswer() {
-    document.getElementById("answerTag").style.display = 'block';
+    console.log(
+        "hi")
 }
 
 function deleteCard() {
-   
+    console.log(
+        "bye")
 }
